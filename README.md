@@ -19,7 +19,17 @@ Main shell tools that I've learned are:
 * output/input redirection commands: cat, >, >>, <, |; 
 * and concept that gives us opportunity to code frequently used commands into handy scripts.
 
+The Linux Survival tutorial introduced me a several new commands like:
+* 'less' that is used for reading large file contents
+* 'lpq' and 'lpqm' used to show and remove printer's queue 
+* symbolic link that shows symbolic path of file location and created with 'ln' command
+* 'df' command that displays free disk space 
+* 'ps' command, used to examine running programs or processes 
+
+An article on [Linux Command](http://linuxcommand.org) provided a couple useful features like Brace Expansion, Command Substitution and now I comprehed the power of `chmod 777` 😄
+
 ![Screenshot of performed tasks](task-unix-shell/CLI_Complete.png)
+![Screenshot of performed tasks](task-unix-shell/Linux_Survival_Complete.png)
 
 ## 2 - Git Collaboration
 
