@@ -1,5 +1,7 @@
 # Kottans backend
 
+---
+
 ## 0 - Git and GitHub
 
 Git is a powerful tool of every developer, it makes life easier and saves time. Git simplifies work with version control, provides easy access to history of changes, it can remove fear of irreparable consequences that allow us to experiment with program, gives us opportunity to collaborate, share projects with other people and a lot more.
@@ -9,6 +11,8 @@ Course on Udacity had a great educational impact on me, a big pros that it showe
 *Copied from frontend course*
 
 ![Screenshot of performed tasks](task-git-intro/Udacity_Git_Screen.png)
+
+---
 
 ## 1 - Unix Shell
 
@@ -26,10 +30,12 @@ The Linux Survival tutorial introduced me a several new commands like:
 * 'df' command that displays free disk space 
 * 'ps' command, used to examine running programs or processes 
 
-An article on [Linux Command](http://linuxcommand.org) provided a couple useful features like Brace Expansion, Command Substitution and now I comprehed the power of `chmod 777` 😄
+An article on [Linux Command](http://linuxcommand.org) provided a couple useful features like Brace Expansion, Command Substitution and now I comprehend the power of `chmod 777` 😄
 
 ![Screenshot of performed tasks](task-unix-shell/CLI_Complete.png)
 ![Screenshot of performed tasks](task-unix-shell/Linux_Survival_Complete.png)
+
+---
 
 ## 2 - Git Collaboration
 
