@@ -75,17 +75,16 @@ Text memory segment is read-only and stores all of the program's code, whereas d
 <details>
   <summary>Output of `proc` command</summary>
   
-   **Heap** - [560682537000-5606825d3000]
 
-   **Memory Mapping Segment** - [7f8d43135000-7f8d43137000]
-
+   **Heap** - [560682537000-5606825d3000]  
+   **Memory Mapping Segment** - [7f8d43135000-7f8d43137000]  
    **Stack** - [7fffa75d8000-7fffa75f9000]
 
 ```md
 560681596000-5606815cf000 r-xp 00000000 08:01 409093                     /usr/lib/upower/upowerd
 5606817cf000-5606817d2000 r--p 00039000 08:01 409093                     /usr/lib/upower/upowerd
 5606817d2000-5606817d3000 rw-p 0003c000 08:01 409093                     /usr/lib/upower/upowerd
-`**560682537000-5606825d3000**` rw-p 00000000 00:00 0                          [heap]
+```**560682537000-5606825d3000**``` rw-p 00000000 00:00 0                          [heap]
 7f8d34000000-7f8d34021000 rw-p 00000000 00:00 0 
 7f8d34021000-7f8d38000000 ---p 00000000 00:00 0 
 7f8d38000000-7f8d38021000 rw-p 00000000 00:00 0 
@@ -102,7 +101,7 @@ Text memory segment is read-only and stores all of the program's code, whereas d
 7f8d41895000-7f8d42095000 rw-p 00000000 00:00 0 
 7f8d42095000-7f8d43131000 r--p 00000000 08:01 404792                     /usr/lib/locale/locale-archive
 7f8d43131000-7f8d43135000 rw-p 00000000 00:00 0 
-`**7f8d43135000-7f8d43137000**` r--p 00000000 08:01 1054422                    /lib/x86_64-linux-gnu/libuuid.so.1.3.0
+```**7f8d43135000-7f8d43137000**``` r--p 00000000 08:01 1054422                    /lib/x86_64-linux-gnu/libuuid.so.1.3.0
 7f8d43137000-7f8d4313b000 r-xp 00002000 08:01 1054422                    /lib/x86_64-linux-gnu/libuuid.so.1.3.0
 7f8d4313b000-7f8d4313c000 r--p 00006000 08:01 1054422                    /lib/x86_64-linux-gnu/libuuid.so.1.3.0
 7f8d4313c000-7f8d4313d000 r--p 00006000 08:01 1054422                    /lib/x86_64-linux-gnu/libuuid.so.1.3.0
@@ -279,7 +278,7 @@ Text memory segment is read-only and stores all of the program's code, whereas d
 7f8d45b94000-7f8d45b95000 rw-p 00029000 08:01 1054321                    /lib/x86_64-linux-gnu/ld-2.28.so
 7f8d45b95000-7f8d45b96000 rw-p 00000000 00:00 0 
 
-`**7fffa75d8000-7fffa75f9000**` rw-p 00000000 00:00 0                          [stack]
+```**7fffa75d8000-7fffa75f9000**``` rw-p 00000000 00:00 0                          [stack]
 7fffa75fb000-7fffa75fe000 r--p 00000000 00:00 0                          [vvar]
 7fffa75fe000-7fffa7600000 r-xp 00000000 00:00 0                          [vdso]
 ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
