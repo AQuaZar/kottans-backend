@@ -72,7 +72,14 @@ In Linux, will be performed anonymous memory mapping instead of using heap memor
 
 Text memory segment is read-only and stores all of the program's code, whereas data segment holds data that may be both readable and writable and  used for static variables contents. 
 
-{
+<details>
+  <summary>Output of `proc` command</summary>
+  
+   **Heap** - [560682537000-5606825d3000]
+   **Memory Mapping Segment** - [7f8d43135000-7f8d43137000]
+   **Stack** - [7fffa75d8000-7fffa75f9000]
+
+```md
 560681596000-5606815cf000 r-xp 00000000 08:01 409093                     /usr/lib/upower/upowerd
 5606817cf000-5606817d2000 r--p 00039000 08:01 409093                     /usr/lib/upower/upowerd
 5606817d2000-5606817d3000 rw-p 0003c000 08:01 409093                     /usr/lib/upower/upowerd
@@ -111,7 +118,7 @@ Text memory segment is read-only and stores all of the program's code, whereas d
 7f8d43811000-7f8d43812000 r--p 00032000 08:01 409604                     /usr/lib/x86_64-linux-gnu/libhogweed.so.4.4
 7f8d43812000-7f8d43813000 rw-p 00033000 08:01 409604                     /usr/lib/x86_64-linux-gnu/libhogweed.so.4.4
 7f8d43813000-7f8d43815000 rw-p 00000000 00:00 0 
-{
+
 7f8d43815000-7f8d43849000 r-xp 00000000 08:01 409745                     /usr/lib/x86_64-linux-gnu/libnettle.so.6.4
 7f8d43849000-7f8d43a48000 ---p 00034000 08:01 409745                     /usr/lib/x86_64-linux-gnu/libnettle.so.6.4
 7f8d43a48000-7f8d43a4a000 r--p 00033000 08:01 409745                     /usr/lib/x86_64-linux-gnu/libnettle.so.6.4
@@ -269,13 +276,10 @@ Text memory segment is read-only and stores all of the program's code, whereas d
 7f8d45b93000-7f8d45b94000 r--p 00028000 08:01 1054321                    /lib/x86_64-linux-gnu/ld-2.28.so
 7f8d45b94000-7f8d45b95000 rw-p 00029000 08:01 1054321                    /lib/x86_64-linux-gnu/ld-2.28.so
 7f8d45b95000-7f8d45b96000 rw-p 00000000 00:00 0 
-}
+
 **7fffa75d8000-7fffa75f9000** rw-p 00000000 00:00 0                          [stack]
 7fffa75fb000-7fffa75fe000 r--p 00000000 00:00 0                          [vvar]
 7fffa75fe000-7fffa7600000 r-xp 00000000 00:00 0                          [vdso]
 ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
-}
-
-**Heap** - [560682537000-5606825d3000]
-**Memory Mapping Segment** - [7f8d43135000-7f8d43137000]
-**Stack** - [7fffa75d8000-7fffa75f9000]
+```
+</details>
