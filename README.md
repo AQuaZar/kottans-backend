@@ -291,5 +291,7 @@ The article explains basics of memory management, reveals concept of virtual adr
 
 ## 5 -- TCP. UDP. Network
 
-Internet 101 videos are extremely teachable and information presented in nice-looking form, good for me I'm aldready familiar with terminilogy of Internet and TCP/IP protocols (thanks NAU, very cool). 
+**Internet** 101 videos are extremely teachable and information presented in nice-looking form, good for me I'm aldready familiar with terminilogy of Internet and TCP/IP protocols (thanks NAU, very cool). 
+
+**How DNS Works**. Education in the form of comics? yes please. It definitely explains how DNS works and what a journey lies behind a DNS query. 
 
