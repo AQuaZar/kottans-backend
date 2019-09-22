@@ -2,7 +2,7 @@
 
 ---
 
-## 0 - Git and GitHub
+## 0 -- Git and GitHub
 
 Git is a powerful tool of every developer, it makes life easier and saves time. Git simplifies work with version control, provides easy access to history of changes, it can remove fear of irreparable consequences that allow us to experiment with program, gives us opportunity to collaborate, share projects with other people and a lot more.
 
@@ -14,7 +14,7 @@ Course on Udacity had a great educational impact on me, a big pros that it showe
 
 ---
 
-## 1 - Unix Shell
+## 1 -- Unix Shell
 
 Command line skills are usefull to operate with file directories, every action performed using GUI can be acomplished by line of code in CLI, this allows us to work faster and be ready to situation when graphical interface don't even exist. Also understanding of CLI is crucial to work with Git. 
 Main shell tools that I've learned are:
@@ -37,7 +37,7 @@ An article on [Linux Command](http://linuxcommand.org) provided a couple useful 
 
 ---
 
-## 2 - Git Collaboration
+## 2 -- Git Collaboration
 
 This two completed courses, in fact, it's just repetition of earlier covered material with useful additions and some new Git features.
 What was learned new: 
@@ -58,7 +58,7 @@ What was learned new:
 
 ---
 
-## 4 - Memory Management
+## 4 -- Memory Management
 
 
 > What's going to happen if program reaches maximum limit of stack ?
@@ -288,3 +288,8 @@ ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsysca
 The article explains basics of memory management, reveals concept of virtual adresses and describes roles of diffent memory segments. It's important to keep in mind problems that can occur beacause of stack or heap expanding.
 
 ---
+
+## 5 -- TCP. UDP. Network
+
+Internet 101 videos are extremely teachable and information presented in nice-looking form, good for me I'm aldready familiar with terminilogy of Internet and TCP/IP protocols (thanks NAU, very cool). 
+
