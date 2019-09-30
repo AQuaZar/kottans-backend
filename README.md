@@ -14,7 +14,7 @@ Course on Udacity had a great educational impact on me, a big pros that it showe
 
 ---
 
-## 1 -- Unix Shell
+## 1 - Unix Shell
 
 Command line skills are usefull to operate with file directories, every action performed using GUI can be acomplished by line of code in CLI, this allows us to work faster and be ready to situation when graphical interface don't even exist. Also understanding of CLI is crucial to work with Git. 
 Main shell tools that I've learned are:
@@ -37,7 +37,7 @@ An article on [Linux Command](http://linuxcommand.org) provided a couple useful 
 
 ---
 
-## 2 -- Git Collaboration
+## 2 - Git Collaboration
 
 This two completed courses, in fact, it's just repetition of earlier covered material with useful additions and some new Git features.
 What was learned new: 
@@ -58,7 +58,7 @@ What was learned new:
 
 ---
 
-## 4 -- Memory Management
+## 4 - Memory Management
 
 
 > What's going to happen if program reaches maximum limit of stack ?
@@ -289,9 +289,18 @@ The article explains basics of memory management, reveals concept of virtual adr
 
 ---
 
-## 5 -- TCP. UDP. Network
+## 5 - TCP. UDP. Network
 
-**Internet** 101 videos are extremely teachable and information presented in nice-looking form, good for me I'm aldready familiar with terminilogy of Internet and TCP/IP protocols (thanks NAU, very cool). 
+**Internet 101** videos are extremely teachable and information presented in nice-looking form, good for me I'm aldready familiar with terminilogy of Internet and TCP/IP protocols (thanks NAU, very cool). 
 
-**How DNS Works**. Education in the form of comics? yes please. It definitely explains how DNS works and what a journey lies behind a DNS query. 
+**How DNS Works**. Education in the form of comics? yes please. In entertaining form it explains how DNS works and what a journey lies behind a DNS query. Main concepts that I learned is that every unit in this DNS-finding sequence doesn't need to know every address in the Internet, it just knows where to ask, and another thing that helps is cash where machine can look before asking.
+**Networking for Web Developers**
+TCP flag is a part of the TCP packet and used to communicate between sender and receiver in the form of boolean value.
+I find this familiar to the conversation of two people with walkie-talkie. They need some code prhases to signal start or end of conversation, acknowledgment of data delivery like [S],[F] and [.] flags in TCP packet. 
+traceroute - tell us how many hops are between you and destination address.
+ttl - time to live
 
+Firewall is one of the **middlebox** devices that performs filtering function between client and server, it can also change traffic, e.g. replace content of a web-page in politic or social purposes.
+NAT is another example of middlebox devices, they act as a bridge between outside and inside network, several devices in local network can share the same "outside" address, usually our home routers perform both firewall and NAT functions.  
+
+![Screenshot of performed tasks](task-TCP-UDP-Network/udacity-networking-complete.png)
