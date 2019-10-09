@@ -303,4 +303,4 @@ ttl - time to live
 Firewall is one of the **middlebox** devices that performs filtering function between client and server, it can also change traffic, e.g. replace content of a web-page in politic or social purposes.
 NAT is another example of middlebox devices, they act as a bridge between outside and inside network, several devices in local network can share the same "outside" address, usually our home routers perform both firewall and NAT functions.  
 
-![Screenshot of performed tasks](task-TCP-UDP-Network/udacity-networking-complete.png)
+![Screenshot of performed tasks](task-networks/udacity-networking-complete.png)
