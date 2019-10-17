@@ -301,8 +301,9 @@ TCP flag is a part of the TCP packet and used to communicate between sender and 
 I find this familiar to the conversation of two people with walkie-talkie. They need some code phrases to signal start or end of conversation, acknowledgment of data delivery like [S],[F] and [.] flags in TCP packet. 
 
 *Good to remember*:
-traceroute - tell us how many hops are between you and destination address.
-ttl - time to live
+
+    - traceroute - tell us how many hops are between you and destination address.
+    - ttl - time to live
 
 Firewall is one of the **middlebox** devices that performs filtering function between client and server, it can also change traffic, e.g. replace content of a web-page in politic or social purposes.
 NAT is another example of middlebox devices, they act as a bridge between outside and inside network, several devices in local network can share the same "outside" address, usually our home routers perform both firewall and NAT functions.  
@@ -489,13 +490,13 @@ Enter host password for user 'AQuaZar':
 
 1. Name at least three possible negative consequences of not using https.
 
-  1. Absence of privacy, client's private data can be leaked.
-  2. Messages between client and server can intercepted and changed or copied in own purposes.
-  3. Unreliability of host, server can be uncertified and pretend to be another web-site.
+    1. Absence of privacy, client's private data can be leaked.
+    2. Messages between client and server can intercepted and changed or copied in own purposes.
+    3. Unreliability of host, server can be uncertified and pretend to be another web-site.
 
 2. Explain the main idea behind public key cryptography in few sentences
 
-  Public key is accessible for everyone and used to decrypt messages encrypted by private key and vice versa. 
+    * Public key is accessible for everyone and used to decrypt messages encrypted by private key and vice versa. 
 First party encrypts message with own private key and sends to another, since access to private key has only owner it proves authenticity of sender, in its turn, second party encrypts own message (for example key for symmetric encryption) by public key of other party, and by own private key, as result first party will get message that only it can decrypt and authenticity of second party will be proven.
 
 3. You are creating and application for pet clinic. You need to implement the following functionality:
@@ -511,9 +512,9 @@ First party encrypts message with own private key and sends to another, since ac
   * PUT with pets name in request payload 
   * Server response: 200 OK 
 * add new info about pet's health
-POST or PUT
+  * POST or PUT
 * assign a pet to a particular doctor in the clinic
-POST or PUT
+  * POST or PUT
 * register an appointment for a pet. 
   * POST
   * Query: URI of pet's appointments 
