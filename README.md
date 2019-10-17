@@ -308,6 +308,8 @@ I find this familiar to the conversation of two people with walkie-talkie. They 
 Firewall is one of the **middlebox** devices that performs filtering function between client and server, it can also change traffic, e.g. replace content of a web-page in politic or social purposes.
 NAT is another example of middlebox devices, they act as a bridge between outside and inside network, several devices in local network can share the same "outside" address, usually our home routers perform both firewall and NAT functions.  
 
+Practical task on python - [port-sniffer](task-networks/sniffer.py)
+
 ![Screenshot of performed tasks](task-networks/udacity-networking-complete.png)
 
 ## 7 - HTTP & HTTPS
