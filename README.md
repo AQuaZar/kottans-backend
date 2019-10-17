@@ -6,7 +6,7 @@
 
 Git is a powerful tool of every developer, it makes life easier and saves time. Git simplifies work with version control, provides easy access to history of changes, it can remove fear of irreparable consequences that allow us to experiment with program, gives us opportunity to collaborate, share projects with other people and a lot more.
 
-Course on Udacity had a great educational impact on me, a big pros that it showed different real situations and how they are handeled with Git. Were studied main concepts like commits, staging area, remote repository, branches and GitHub collaboration principles. Important idea of commiting is to understand not only how make a commit but why and how often.
+Course on Udacity had a great educational impact on me, a big pros that it showed different real situations and how they are handled with Git. Were studied main concepts like commits, staging area, remote repository, branches and GitHub collaboration principles. Important idea of committing is to understand not only how make a commit but why and how often.
 
 *Copied from frontend course*
 
@@ -16,7 +16,7 @@ Course on Udacity had a great educational impact on me, a big pros that it showe
 
 ## 1 - Unix Shell
 
-Command line skills are usefull to operate with file directories, every action performed using GUI can be acomplished by line of code in CLI, this allows us to work faster and be ready to situation when graphical interface don't even exist. Also understanding of CLI is crucial to work with Git. 
+Command line skills are useful to operate with file directories, every action performed using GUI can be accomplished by line of code in CLI, this allows us to work faster and be ready to situation when graphical interface don't even exist. Also understanding of CLI is crucial to work with Git. 
 Main shell tools that I've learned are:
 * directory navigating commands like: pwd, ls, cd, mkdir, mv; 
 * files operating commands: touch, sort, uniq, grep, sed; 
@@ -41,7 +41,7 @@ An article on [Linux Command](http://linuxcommand.org) provided a couple useful 
 
 This two completed courses, in fact, it's just repetition of earlier covered material with useful additions and some new Git features.
 What was learned new: 
-* Flags, that used to alter how a program functions and/or what is displayed. For example -p, --stat, --oneline, --decorate, --graph, --all for git log. This flags helps us to get more info about commits and operate with it in more convinient way;
+* Flags, that used to alter how a program functions and/or what is displayed. For example -p, --stat, --oneline, --decorate, --graph, --all for git log. This flags helps us to get more info about commits and operate with it in more convenient way;
 * git show, to access info about particular commit and how it can be reached by HEAD reference;
 * git tag, to label commits;
 * git commit --amend, useful command to "cancel" most recent commit, allows us to add some files to staging area or change the commit message;
@@ -285,18 +285,22 @@ ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsysca
 ```
 </details>
 
-The article explains basics of memory management, reveals concept of virtual adresses and describes roles of diffent memory segments. It's important to keep in mind problems that can occur beacause of stack or heap expanding.
+The article explains basics of memory management, reveals concept of virtual addresses and describes roles of different memory segments. It's important to keep in mind problems that can occur because of stack or heap expanding.
 
 ---
 
-## 5 - TCP. UDP. Network
+## 6 - TCP. UDP. Network
 
-**Internet 101** videos are extremely teachable and information presented in nice-looking form, good for me I'm aldready familiar with terminilogy of Internet and TCP/IP protocols (thanks NAU, very cool). 
+**Internet 101** videos are extremely teachable and information presented in nice-looking form, good for me I'm already familiar with terminology of Internet and TCP/IP protocols (thanks NAU, very cool). 
 
 **How DNS Works**. Education in the form of comics? yes please. In entertaining form it explains how DNS works and what a journey lies behind a DNS query. Main concepts that I learned is that every unit in this DNS-finding sequence doesn't need to know every address in the Internet, it just knows where to ask, and another thing that helps is cash where machine can look before asking.
+
 **Networking for Web Developers**
+Throughout the course were covered CLI commands to interact with network, were revealed some problems existing in Web and protocols like HTTP and TCP were explained.
 TCP flag is a part of the TCP packet and used to communicate between sender and receiver in the form of boolean value.
-I find this familiar to the conversation of two people with walkie-talkie. They need some code prhases to signal start or end of conversation, acknowledgment of data delivery like [S],[F] and [.] flags in TCP packet. 
+I find this familiar to the conversation of two people with walkie-talkie. They need some code phrases to signal start or end of conversation, acknowledgment of data delivery like [S],[F] and [.] flags in TCP packet. 
+
+*Good to remember*:
 traceroute - tell us how many hops are between you and destination address.
 ttl - time to live
 
@@ -304,3 +308,217 @@ Firewall is one of the **middlebox** devices that performs filtering function be
 NAT is another example of middlebox devices, they act as a bridge between outside and inside network, several devices in local network can share the same "outside" address, usually our home routers perform both firewall and NAT functions.  
 
 ![Screenshot of performed tasks](task-networks/udacity-networking-complete.png)
+
+## 7 - HTTP & HTTPS
+
+HTTP is a **stateless** protocol in which communication between host and client occurs via request/response pair. 
+Action on a host is determined by a special **verbs**, most popular are GET, POST, PUT and DELETE. 
+Server responds with message payloads and status codes that help client to understand server response.
+
+Using cookies is one of the ways to identify user, they allow the server to **attach arbitrary information for outgoing responses**.
+
+The second part of article introduced more detailed information about http connections, namely process of user identification and authentication, secure protocol and certificates and concept of caching that saves time, cost and improve web-browsing experience. 
+
+
+<details>
+  <summary>curl https://api.github.com/users/AQuaZar </summary>                       
+{
+  "login": "AQuaZar",
+  "id": 36030534,
+  "node_id": "MDQ6VXNlcjM2MDMwNTM0",
+  "avatar_url": "https://avatars3.githubusercontent.com/u/36030534?v=4",
+  "gravatar_id": "",
+  "url": "https://api.github.com/users/AQuaZar",
+  "html_url": "https://github.com/AQuaZar",
+  "followers_url": "https://api.github.com/users/AQuaZar/followers",
+  "following_url": "https://api.github.com/users/AQuaZar/following{/other_user}",
+  "gists_url": "https://api.github.com/users/AQuaZar/gists{/gist_id}",
+  "starred_url": "https://api.github.com/users/AQuaZar/starred{/owner}{/repo}",
+  "subscriptions_url": "https://api.github.com/users/AQuaZar/subscriptions",
+  "organizations_url": "https://api.github.com/users/AQuaZar/orgs",
+  "repos_url": "https://api.github.com/users/AQuaZar/repos",
+  "events_url": "https://api.github.com/users/AQuaZar/events{/privacy}",
+  "received_events_url": "https://api.github.com/users/AQuaZar/received_events",
+  "type": "User",
+  "site_admin": false,
+  "name": null,
+  "company": null,
+  "blog": "",
+  "location": null,
+  "email": null,
+  "hireable": null,
+  "bio": null,
+  "public_repos": 6,
+  "public_gists": 0,
+  "followers": 2,
+  "following": 2,
+  "created_at": "2018-02-01T08:23:23Z",
+  "updated_at": "2019-10-14T14:01:23Z"
+}
+</details>
+<details>
+<summary>curl -i https://api.github.com/users/aquazar </summary>                      
+HTTP/1.1 200 OK
+Date: Mon, 14 Oct 2019 14:06:32 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 1249
+Server: GitHub.com
+Status: 200 OK
+X-RateLimit-Limit: 60
+X-RateLimit-Remaining: 50
+X-RateLimit-Reset: 1571065200
+Cache-Control: public, max-age=60, s-maxage=60
+Vary: Accept
+ETag: "4afbb5ccf212d758c45dcc5b691369a9"
+Last-Modified: Mon, 14 Oct 2019 14:01:23 GMT
+X-GitHub-Media-Type: github.v3; format=json
+Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type
+Access-Control-Allow-Origin: *
+Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+X-Frame-Options: deny
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+Content-Security-Policy: default-src 'none'
+Vary: Accept-Encoding
+X-GitHub-Request-Id: C702:1482B:4E3C9F8:5E97CD2:5DA480E8
+{
+  "login": "AQuaZar",
+  "id": 36030534,
+  "node_id": "MDQ6VXNlcjM2MDMwNTM0",
+  "avatar_url": "https://avatars3.githubusercontent.com/u/36030534?v=4",
+  "gravatar_id": "",
+  "url": "https://api.github.com/users/AQuaZar",
+  "html_url": "https://github.com/AQuaZar",
+  "followers_url": "https://api.github.com/users/AQuaZar/followers",
+  "following_url": "https://api.github.com/users/AQuaZar/following{/other_user}",
+  "gists_url": "https://api.github.com/users/AQuaZar/gists{/gist_id}",
+  "starred_url": "https://api.github.com/users/AQuaZar/starred{/owner}{/repo}",
+  "subscriptions_url": "https://api.github.com/users/AQuaZar/subscriptions",
+  "organizations_url": "https://api.github.com/users/AQuaZar/orgs",
+  "repos_url": "https://api.github.com/users/AQuaZar/repos",
+  "events_url": "https://api.github.com/users/AQuaZar/events{/privacy}",
+  "received_events_url": "https://api.github.com/users/AQuaZar/received_events",
+  "type": "User",
+  "site_admin": false,
+  "name": null,
+  "company": null,
+  "blog": "",
+  "location": null,
+  "email": null,
+  "hireable": null,
+  "bio": null,
+  "public_repos": 6,
+  "public_gists": 0,
+  "followers": 2,
+  "following": 2,
+  "created_at": "2018-02-01T08:23:23Z",
+  "updated_at": "2019-10-14T14:01:23Z"
+}
+</details>
+<details>
+<summary>curl https://api.github.com/gists/starred </summary>                 
+{
+  "message": "Requires authentication",
+  "documentation_url": "https://developer.github.com/v3/#authentication"
+}
+</details>
+<details>
+<summary>curl --user "AQuaZar:dsagadgs" https://api.github.com/gists/starred </summary>
+{
+  "message": "Bad credentials",
+  "documentation_url": "https://developer.github.com/v3"
+}
+</details>
+<details>
+
+<summary> curl --user "AQuaZar" https://api.github.com/gists/starred </summary>        
+Enter host password for user 'AQuaZar':
+[
+  {
+    "url": "https://api.github.com/gists/e0defc252f665b2b51e8",
+    "forks_url": "https://api.github.com/gists/e0defc252f665b2b51e8/forks",
+    "commits_url": "https://api.github.com/gists/e0defc252f665b2b51e8/commits",
+    "id": "e0defc252f665b2b51e8",
+    "node_id": "MDQ6R2lzdGUwZGVmYzI1MmY2NjViMmI1MWU4",
+    "git_pull_url": "https://gist.github.com/e0defc252f665b2b51e8.git",
+    "git_push_url": "https://gist.github.com/e0defc252f665b2b51e8.git",
+    "html_url": "https://gist.github.com/e0defc252f665b2b51e8",
+    "files": {
+      "twitch.py": {
+        "filename": "twitch.py",
+        "type": "application/x-python",
+        "language": "Python",
+        "raw_url": "https://gist.githubusercontent.com/StepS-/e0defc252f665b2b51e8/raw/43b4d5616d2ea60102a8efef779c679b86d53cf7/twitch.py",
+        "size": 8007
+      }
+    },
+    "public": true,
+    "created_at": "2015-06-18T02:09:15Z",
+    "updated_at": "2019-10-14T14:04:41Z",
+    "description": "",
+    "comments": 0,
+    "user": null,
+    "comments_url": "https://api.github.com/gists/e0defc252f665b2b51e8/comments",
+    "owner": {
+      "login": "StepS-",
+      "id": 5569139,
+      "node_id": "MDQ6VXNlcjU1NjkxMzk=",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/5569139?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/StepS-",
+      "html_url": "https://github.com/StepS-",
+      "followers_url": "https://api.github.com/users/StepS-/followers",
+      "following_url": "https://api.github.com/users/StepS-/following{/other_user}",
+      "gists_url": "https://api.github.com/users/StepS-/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/StepS-/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/StepS-/subscriptions",
+      "organizations_url": "https://api.github.com/users/StepS-/orgs",
+      "repos_url": "https://api.github.com/users/StepS-/repos",
+      "events_url": "https://api.github.com/users/StepS-/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/StepS-/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "truncated": false
+  }
+]
+</details>
+
+### Q&A:
+
+1. Name at least three possible negative consequences of not using https.
+
+  1. Absence of privacy, client's private data can be leaked.
+  2. Messages between client and server can intercepted and changed or copied in own purposes.
+  3. Unreliability of host, server can be uncertified and pretend to be another web-site.
+
+2. Explain the main idea behind public key cryptography in few sentences
+
+  Public key is accessible for everyone and used to decrypt messages encrypted by private key and vice versa. 
+First party encrypts message with own private key and sends to another, since access to private key has only owner it proves authenticity of sender, in its turn, second party encrypts own message (for example key for symmetric encryption) by public key of other party, and by own private key, as result first party will get message that only it can decrypt and authenticity of second party will be proven.
+
+3. You are creating and application for pet clinic. You need to implement the following functionality:
+* add new pet 
+  * POST
+  * Query: application/pets 
+  * Body: name, age, breed, owner's name, medical history
+  * Server response: 200 OK
+* search pet by name
+  * GET method with pet name as query params
+  * Server response: 200 OK 
+* change name of an existing pet
+  * PUT with pets name in request payload 
+  * Server response: 200 OK 
+* add new info about pet's health
+POST or PUT
+* assign a pet to a particular doctor in the clinic
+POST or PUT
+* register an appointment for a pet. 
+  * POST
+  * Query: URI of pet's appointments 
+  * Body: info about pet, doctor and appointment date and time
+  * Server response: 200 OK
+
+
+
