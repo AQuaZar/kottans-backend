@@ -537,7 +537,7 @@ First party encrypts message with own private key and sends to another, since ac
 
 **Design patterns for humans**
 
->>Design patterns are solutions to recurring problems; guidelines on how to tackle certain problems
+>Design patterns are solutions to recurring problems; guidelines on how to tackle certain problems
 
 Repository on github that can be used as useful reminder of different design patterns. I clarified to myself that there are:
 * Creational, that are focused on how to instantiate an object;
