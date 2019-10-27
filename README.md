@@ -312,6 +312,8 @@ Practical task on python - [port-sniffer](task-networks/sniffer.py)
 
 ![Screenshot of performed tasks](task-networks/udacity-networking-complete.png)
 
+---
+
 ## 7 - HTTP & HTTPS
 
 HTTP is a **stateless** protocol in which communication between host and client occurs via request/response pair. 
@@ -523,5 +525,16 @@ First party encrypts message with own private key and sends to another, since ac
   * Body: info about pet, doctor and appointment date and time
   * Server response: 200 OK
 
+---
 
+## 8 - Patterns
 
+**Design patterns for humans**
+
+>>Design patterns are solutions to recurring problems; guidelines on how to tackle certain problems
+
+Repository on github that can be used as useful reminder of different design patterns. I clarified to myself that there are:
+* Creational, that are focused on how to instantiate an object;
+* Structural, concerned how entities can use each other in structural context;
+* Behavioral cover communication and roles between entities; 
+types of patterns. 
