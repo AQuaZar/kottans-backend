@@ -289,6 +289,12 @@ The article explains basics of memory management, reveals concept of virtual add
 
 ---
 
+## 5 - Python Basics 1
+
+[HackerRank](https://www.hackerrank.com/axquazar) link.
+
+---
+
 ## 6 - TCP. UDP. Network
 
 **Internet 101** videos are extremely teachable and information presented in nice-looking form, good for me I'm already familiar with terminology of Internet and TCP/IP protocols (thanks NAU, very cool). 
