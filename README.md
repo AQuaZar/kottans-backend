@@ -544,3 +544,17 @@ Repository on github that can be used as useful reminder of different design pat
 * Structural, concerned how entities can use each other in structural context;
 * Behavioral cover communication and roles between entities; 
 types of patterns. 
+
+**Software Architecture**
+
+UML
+OCL
+How to analyze technical task by breaking up it on a lexical pieces and building UML class-diagram from them.
+statechart
+The point of the first 14 lessons is more about how to represent, express and describe architecture of software. 
+
+Design process in a nutshell:
+
+* Phase 0 - Understand the system and it's interactions with external actors
+* Phase 1 - Divide the system into components and analyze interactions that will have to occur among the components and define constraints.
+* Phase 2 - Select architectural style 
