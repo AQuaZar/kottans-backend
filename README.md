@@ -562,3 +562,5 @@ The point of the first 14 lessons is more about how to represent, express and de
 * Phase 2 - Select architectural style 
 
 After completing this course I can definitely say that I will not remember all of the material covered, but as was mentioned in this course that its hard to implement patterns and software architecture principles by theoretical learning, is more about using your own experience. So this course gave me awareness about patterns and aspects of system design but my practical path is yet to come.
+
+![Screenshot of performed tasks](task-patterns/soft-arch-completed.png)
