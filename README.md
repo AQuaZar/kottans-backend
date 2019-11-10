@@ -535,7 +535,7 @@ First party encrypts message with own private key and sends to another, since ac
 
 ## 8 - Patterns
 
-**Design patterns for humans**
+### Design patterns for humans
 
 >Design patterns are solutions to recurring problems; guidelines on how to tackle certain problems
 
@@ -544,18 +544,18 @@ Repository on github that can be used as useful reminder of different design pat
 * Structural, concerned how entities can use each other in structural context;
 * Behavioral cover communication and roles between entities; 
 
-**Software Architecture**
+### Software Architecture
 
 The point of the first 14 lessons is more about how to represent, express and describe architecture of software, whereas next lessons are closer to design itself and lesson 27 is quintessence of design patterns and is most coupled with current section.
 
-What was new to me:
+**What was new to me:**
 
-*UML - Unified Modeling Language, used to visualize and represent the way system was designed. 
-*OCL - provides constraint and object query expressions that cannot be expressed by UML.
-*How to analyze technical task by breaking up it on a lexical pieces and building UML class-diagram from them.
+* UML - Unified Modeling Language, used to visualize and represent the way system was designed. 
+* OCL - provides constraint and object query expressions that cannot be expressed by UML.
+* How to analyze technical task by breaking up it on a lexical pieces and building UML class-diagram from them.
  
 
-Design process in a nutshell:
+**Design process in a nutshell:**
 
 * Phase 0 - Understand the system and it's interactions with external actors
 * Phase 1 - Divide the system into components and analyze interactions that will have to occur among the components and define constraints.
