@@ -517,7 +517,7 @@ First party encrypts message with own private key and sends to another, since ac
   * Server response: 200 OK
 * search pet by name
   * GET method with pet name as query params
-  * Server response: 200 OK 
+  * Server response: 200 OK, resource in body 
 * change name of an existing pet
   * PUT with pets name in request payload 
   * Server response: 200 OK 
