@@ -539,22 +539,26 @@ First party encrypts message with own private key and sends to another, since ac
 
 >Design patterns are solutions to recurring problems; guidelines on how to tackle certain problems
 
-Repository on github that can be used as useful reminder of different design patterns. I clarified to myself that there are:
+Repository on github that can be used as useful reminder of different design patterns. I clarified to myself that patterns can be classified on:
 * Creational, that are focused on how to instantiate an object;
 * Structural, concerned how entities can use each other in structural context;
 * Behavioral cover communication and roles between entities; 
-types of patterns. 
 
 **Software Architecture**
 
-UML
-OCL
-How to analyze technical task by breaking up it on a lexical pieces and building UML class-diagram from them.
-statechart
-The point of the first 14 lessons is more about how to represent, express and describe architecture of software. 
+The point of the first 14 lessons is more about how to represent, express and describe architecture of software, whereas next lessons are closer to design itself and lesson 27 is quintessence of design patterns and is most coupled with current section.
+
+What was new to me:
+
+*UML - Unified Modeling Language, used to visualize and represent the way system was designed. 
+*OCL - provides constraint and object query expressions that cannot be expressed by UML.
+*How to analyze technical task by breaking up it on a lexical pieces and building UML class-diagram from them.
+ 
 
 Design process in a nutshell:
 
 * Phase 0 - Understand the system and it's interactions with external actors
 * Phase 1 - Divide the system into components and analyze interactions that will have to occur among the components and define constraints.
 * Phase 2 - Select architectural style 
+
+After completing this course I can definitely say that I will not remember all of the material covered, but as was mentioned in this course that its hard to implement patterns and software architecture principles by theoretical learning, is more about using your own experience. So this course gave me awareness about patterns and aspects of system design but my practical path is yet to come.
