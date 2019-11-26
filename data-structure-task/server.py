@@ -1,6 +1,8 @@
 import http.server
 import socketserver
+import json
 from data_structure import Stack, Linked_list
+
 
 PORT = 8000
 
@@ -9,17 +11,12 @@ myList = Linked_list()
 
 
 def ParseRequest(self):
-    if self.headers["Content-Length"]:
-        content_length = int(self.headers["Content-Length"])
-        body = self.rfile.read(content_length).decode("UTF-8").split("&")
-        request = {}
-        for i in body:
-            i = i.split("=")
-            if len(i) == 2:
-                request[i[0]] = i[1]
-        return request
-    else:
+    if not self.headers["Content-Length"]:
         SendResponse(self, 411, "No 'Content-Length' provided")
+        return
+    content_length = int(self.headers["Content-Length"])
+    request = json.loads(self.rfile.read(content_length).decode("UTF-8"))
+    return request
 
 
 def SendResponse(self, responseCode, responsebody=None):
@@ -36,7 +33,6 @@ def SendResponse(self, responseCode, responsebody=None):
 
 class SimpleHTTPRequestHandler(http.server.BaseHTTPRequestHandler):
     def do_GET(self):
-
         request = ParseRequest(self)
         if not request:
             return
@@ -54,7 +50,6 @@ class SimpleHTTPRequestHandler(http.server.BaseHTTPRequestHandler):
             SendResponse(self, 400, "No 'data_type' or 'action' properties")
 
     def do_PUT(self):
-
         request = ParseRequest(self)
         if not request:
             return
