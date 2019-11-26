@@ -3,19 +3,23 @@ import requests
 url = "http://localhost:8000/"
 
 for i in range(1, 10):
-    requests.put(url, data={"data_type": "stack", "action": "push", "value": str(i)})
+    r = requests.put(
+        url, data={"data_type": "stack", "action": "push", "value": str(i)}
+    )
+    print(r.content)
 for i in range(1, 3):
     r = requests.put(url, data={"data_type": "stack", "action": "pop"})
     print(r.content)
 r = requests.get(url, data={"data_type": "stack", "action": "show"})
-print(r)
+print(r.content)
 
 for i in range(1, 10):
-    requests.put(
+    r = requests.put(
         url, data={"data_type": "linked_list", "action": "insert", "value": str(i)}
     )
+    print(r.content)
 
-requests.put(
+r = requests.put(
     url,
     data={
         "data_type": "linked_list",
@@ -24,7 +28,8 @@ requests.put(
         "successor": "4",
     },
 )
-requests.put(
+print(r.content)
+r = requests.put(
     url,
     data={
         "data_type": "linked_list",
@@ -33,11 +38,12 @@ requests.put(
         "successor": "8",
     },
 )
+print(r.content)
 for i in range(1, 3):
     r = requests.put(
         url, data={"data_type": "linked_list", "action": "remove", "value": str(i)}
     )
+    print(r.content)
 r = requests.get(url, data={"data_type": "linked_list", "action": "show"})
-
 print(r.content)
 

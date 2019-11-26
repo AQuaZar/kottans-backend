@@ -18,16 +18,19 @@ def ParseRequest(self):
             if len(i) == 2:
                 request[i[0]] = i[1]
         return request
+    else:
+        SendResponse(self, 411, "No 'Content-Length' provided")
 
 
 def SendResponse(self, responseCode, responsebody=None):
     if responsebody:
         self.send_response(responseCode)
-        self.end_headers
+        self.send_header("Content-type", "text/plain")
+        self.end_headers()
         self.wfile.write(bytes(responsebody, "UTF-8"))
     else:
         self.send_response(responseCode)
-        self.end_headers
+        self.end_headers()
     return
 
 
@@ -36,29 +39,24 @@ class SimpleHTTPRequestHandler(http.server.BaseHTTPRequestHandler):
 
         request = ParseRequest(self)
         if not request:
-            self.send_response(401)
-            self.end_headers()
             return
 
         if "data_type" in request and "action" in request:
             if request["data_type"] == "stack" and request["action"] == "show":
-                self.send_response(200)
-                self.end_headers()
-                self.wfile.write(bytes(myStack.show(), "utf-8"))
+                SendResponse(self, 200, myStack.show())
             elif request["data_type"] == "linked_list" and request["action"] == "show":
-                self.send_response(200)
-                self.end_headers()
-                self.wfile.write(bytes(myList.show(), "utf-8"))
+                SendResponse(self, 200, myList.show())
             else:
-                self.send_response(401)
-                self.end_headers()
+                SendResponse(
+                    self, 400, "Wrong value for 'data_type' or 'action' properties"
+                )
+        else:
+            SendResponse(self, 400, "No 'data_type' or 'action' properties")
 
     def do_PUT(self):
 
         request = ParseRequest(self)
         if not request:
-            self.send_response(401)
-            self.end_headers()
             return
 
         if "data_type" in request and "action" in request:
@@ -66,51 +64,45 @@ class SimpleHTTPRequestHandler(http.server.BaseHTTPRequestHandler):
                 if request["action"] == "push" and "value" in request:
                     if request["value"].isalnum():
                         myStack.push(request["value"])
-                        self.send_response(200)
+                        SendResponse(self, 200)
                     else:
-                        self.send_response(401)
+                        SendResponse(self, 400, "Value is not string or number")
 
-                elif len(myStack.stack) >= 1 and request["action"] == "pop":
-                    self.send_response(200)
-                    self.end_headers()
-                    self.wfile.write(bytes(myStack.pop(), "utf-8"))
+                elif request["action"] == "pop":
+                    if len(myStack.stack) >= 1:
+                        SendResponse(self, 200, myStack.pop())
+                    else:
+                        SendResponse(self, 409, "Can't pop from empty stack")
                 else:
-                    self.send_response(401)
+                    SendResponse(self, 400, "Wrong 'action' value")
 
-            elif request["data_type"] == "linked_list" and "action" in request:
+            elif request["data_type"] == "linked_list":
                 if request["action"] == "insert" and "value" in request:
-                    if "successor" in request:
-                        try:
-                            if request["value"].isalnum():
+                    if request["value"].isalnum():
+                        if "successor" in request:
+                            try:
                                 myList.insert(request["value"], request["successor"])
-                                self.send_response(200)
-                            else:
-                                self.send_response(401)
-                        except:
-                            self.send_response(401)
-                            self.end_headers()
-                            self.wfile.write(b"Successor not found")
-                    else:
-                        if request["value"].isalnum():
-                            myList.insert(request["value"])
-                            self.send_response(200)
+                                SendResponse(self, 200)
+                            except:
+                                SendResponse(self, 409, "Successor not found")
                         else:
-                            self.send_response(401)
+                            myList.insert(request["value"])
+                            SendResponse(self, 200)
+                    else:
+                        SendResponse(self, 400, "Value is not string or number")
+
                 elif request["action"] == "remove" and "value" in request:
                     try:
                         myList.remove(request["value"])
-                        self.send_response(200)
+                        SendResponse(self, 200)
                     except:
-                        self.send_response(401)
-                        self.end_headers()
-                        self.wfile.write(b"Value not in list")
+                        SendResponse(self, 409, "Value not in list")
                 else:
-                    self.send_response(401)
+                    SendResponse(self, 400, "Wrong 'action' value")
             else:
-                self.send_response(401)
+                SendResponse(self, 400, "Wrong 'data_type' value")
         else:
-            self.send_response(401)
-        self.end_headers()
+            SendResponse(self, 400, "No 'data_type' or 'action' in request")
 
 
 with socketserver.TCPServer(("", PORT), SimpleHTTPRequestHandler) as httpd:
