@@ -30,3 +30,29 @@ Role of this API is to provide means of interaction with two types of data-struc
 | Get         |
 | "data_type" | "linked_list"      | Specifies that linked-list data is shown                                                                                                      |
 | "action"    | "show"             | Full view of list will be provided in body of server response                                                                                 |
+
+## Examples
+
+For example requests will be used 'requests' python library and 'json' library to serialize data.
+
+    import requests
+    import json
+
+    url = "http://localhost:8000/"
+
+    data = {"data_type": "linked_list", "action": "insert", "value": "Joske"}
+    data = json.dumps(data)
+    r = requests.put(url, data)
+
+In this example the PUT request is performed. As a result of request string _"Joske"_ will be _inserted_ in _linked list_ hold in local server memory.
+
+To check state of our linked list we can use GET request:
+
+    data = {"data_type": "linked_list", "action": "show"}
+    data = json.dumps(data)
+    r = requests.get(url, data=data)
+    print(r.content)
+
+To check the body of respond, 'content' field is used, as result we get:
+
+> 'head -> Joske -> None'
