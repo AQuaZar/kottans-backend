@@ -22,18 +22,18 @@ Role of this API is to provide means of interaction with two types of data-struc
 
 | Name        | Value              | Description                                                                                                                                   |
 | ----------- | ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| Put         |
+| **PUT**     |
 | "data_type" | "linked_list"      | Specifies that data from linked-list structure is affected                                                                                    |
 | "action"    | "insert", "remove" | Insert - value specified in "Value" property inserted as a head of the list and will point to successor, remove - removes value from the list |
 | "successor" | alphanumeric value | Optional parameter, if member of list is provided, value specified in "Value" property will be inserted before specified successor            |
 | "value"     | alphanumeric value | Value that will be inserted to the linked list                                                                                                |
-| Get         |
+| **GET**     |
 | "data_type" | "linked_list"      | Specifies that linked-list data is shown                                                                                                      |
 | "action"    | "show"             | Full view of list will be provided in body of server response                                                                                 |
 
 ## Examples
 
-For example requests will be used 'requests' python library and 'json' library to serialize data.
+For requests will be used 'requests' python library and 'json' library to serialize data.
 
     import requests
     import json
@@ -55,4 +55,21 @@ To check state of our linked list we can use GET request:
 
 To check the body of respond, 'content' field is used, as result we get:
 
-> 'head -> Joske -> None'
+> b'head -> Joske -> None'
+
+In next example we will push values 1,2,3,4,5 to stack and pop last two
+
+    for i in range(1, 6):
+        data = {"data_type": "stack", "action": "push", "value": str(i)}
+        data = json.dumps(data)
+        r = requests.put(url, data=data)
+    for i in range(1, 3):
+        data = {"data_type": "stack", "action": "pop"}
+        data = json.dumps(data)
+        r = requests.put(url, data=data)
+        print(r.content)
+
+Server responded with:
+
+> b'5'
+> b'4'
