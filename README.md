@@ -2,7 +2,7 @@
 
 ---
 
-## 0 -- Git and GitHub
+## 1 -- Git and GitHub
 
 Git is a powerful tool of every developer, it makes life easier and saves time. Git simplifies work with version control, provides easy access to history of changes, it can remove fear of irreparable consequences that allow us to experiment with program, gives us opportunity to collaborate, share projects with other people and a lot more.
 
@@ -14,7 +14,7 @@ Course on Udacity had a great educational impact on me, a big pros that it showe
 
 ---
 
-## 1 - Unix Shell
+## 2 - Unix Shell
 
 Command line skills are useful to operate with file directories, every action performed using GUI can be accomplished by line of code in CLI, this allows us to work faster and be ready to situation when graphical interface don't even exist. Also understanding of CLI is crucial to work with Git. 
 Main shell tools that I've learned are:
@@ -37,7 +37,7 @@ An article on [Linux Command](http://linuxcommand.org) provided a couple useful 
 
 ---
 
-## 2 - Git Collaboration
+## 3 - Git Collaboration
 
 This two completed courses, in fact, it's just repetition of earlier covered material with useful additions and some new Git features.
 What was learned new: 
@@ -564,3 +564,10 @@ The point of the first 14 lessons is more about how to represent, express and de
 After completing this course I can definitely say that I will not remember all of the material covered, but as was mentioned in this course that its hard to implement patterns and software architecture principles by theoretical learning, is more about using your own experience. So this course gave me awareness about patterns and aspects of system design but my practical path is yet to come.
 
 ![Screenshot of performed tasks](task-patterns/soft-arch-completed.png)
+
+## 9 - Data Structures
+
+**Stack** is a linear data structure that uses LIFO (last in, first out) principle, data is pushed to stack or popped only from top of it.
+* Pros of stack: O(1) insert/remove element complexity, it could be implemented by linked list (so dynamic memory allocation).
+* Cons of stack: can occur stack overflow and cause memory leak, no random access, inconvenient for search, sort e.t.c 
+**Linked List** is structure constructed from nodes, each node has some data and reference to the next node, last node points to nothing (None,null). It is dynamic data structure, so addresses allocated for elements does not have to be in one place, but could be spread out across memory. Linked list have many variations, like in stack data could be inserted only from head (singly linked list) or alike from both ends (doubly linked list) or even could be circular. This structure is efficient in insertion or removing from ends, but slow in traversing it's content. 

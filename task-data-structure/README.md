@@ -10,11 +10,11 @@ Role of this API is to provide means of interaction with two types of data-struc
 
 | Name        | Value              | Description                                                                                                                                       |
 | ----------- | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Put         |
+| **PUT**     |
 | "data_type" | "stack"            | Specifies that stack data-structure is used                                                                                                       |
 | "action"    | "push", "pop"      | Push - adds value specified in "Value" property on top of the stack, pop - removes value from top of the stack and returns it in body of response |
 | "value"     | alphanumeric value | Value that will be pushed to the stack                                                                                                            |
-| Get         |
+| **GET**     |
 | "data_type" | "stack"            | Specifies that stack data is shown                                                                                                                |
 | "action"    | "show"             | Full view of stack will be provided in body of server response                                                                                    |
 
