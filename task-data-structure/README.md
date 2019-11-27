@@ -40,11 +40,11 @@ For requests will be used 'requests' python library and 'json' library to serial
 
     url = "http://localhost:8000/"
 
-    data = {"data_type": "linked_list", "action": "insert", "value": "Joske"}
+    data = {"data_type": "linked_list", "action": "insert", "value": "Jonathan"}
     data = json.dumps(data)
     r = requests.put(url, data)
 
-In this example the PUT request is performed. As a result of request string _"Joske"_ will be _inserted_ in _linked list_ hold in local server memory.
+In this example the PUT request is performed. As a result of request string _"Jonathan"_ will be _inserted_ in _linked list_ hold in local server memory.
 
 To check state of our linked list we can use GET request:
 
@@ -55,7 +55,7 @@ To check state of our linked list we can use GET request:
 
 To check the body of respond, 'content' field is used, as result we get:
 
-> b'head -> Joske -> None'
+> b'head -> Jonathan -> None'
 
 In next example we will push values 1,2,3,4,5 to stack and pop last two
 
@@ -72,4 +72,19 @@ In next example we will push values 1,2,3,4,5 to stack and pop last two
 Server responded with:
 
 > b'5'
+
 > b'4'
+
+Another feature of linked list insertion is to specify successor of inserted node. For example we have such list structure:
+
+> b'head -> Jonathan -> Joseph -> Jotaro -> None'
+
+And we want to insert value "Joske" before "Jotaro", so that "Jotaro" will be successor of "Joske", we have to add optional property "successor" to data.
+
+    data = {"data_type": "linked_list", "action": "insert", "value": "Joske", "successor":"Jotaro"}
+    data = json.dumps(data)
+    r = requests.put(url, data)
+
+As result we get:
+
+> b'head -> Jonathan -> Joseph -> Joske -> Jotaro -> None'
