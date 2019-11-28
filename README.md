@@ -569,5 +569,10 @@ After completing this course I can definitely say that I will not remember all o
 
 **Stack** is a linear data structure that uses LIFO (last in, first out) principle, data is pushed to stack or popped only from top of it.
 * Pros of stack: O(1) insert/remove element complexity, it could be implemented by linked list (so dynamic memory allocation).
-* Cons of stack: can occur stack overflow and cause memory leak, no random access, inconvenient for search, sort e.t.c 
+* Cons of stack: can occur stack overflow and cause memory leak, no random access, inconvenient for search, sort e.t.c.
+
+**Queue** is very similar to stack but uses another method to access and add data elements -- FIFO (first in, first out). 
+
 **Linked List** is structure constructed from nodes, each node has some data and reference to the next node, last node points to nothing (None,null). It is dynamic data structure, so addresses allocated for elements does not have to be in one place, but could be spread out across memory. Linked list have many variations, like in stack data could be inserted only from head (singly linked list) or alike from both ends (doubly linked list) or even could be circular. This structure is efficient in insertion or removing from ends, but slow in traversing it's content. 
+
+**Tree** is non-linear data-structure, like linked lists it consists of nodes, but node can have links to multiple other nodes. Every tree must have a root that is a top-most node in the tree, and also it has no parents :(. Example of a tree is DOM in HTML.
