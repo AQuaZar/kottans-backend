@@ -575,6 +575,18 @@ After completing this course I can definitely say that I will not remember all o
 
 **Linked List** is structure constructed from nodes, each node has some data and reference to the next node, last node points to nothing (None,null). It is dynamic data structure, so addresses allocated for elements does not have to be in one place, but could be spread out across memory. Linked list have many variations, like in stack data could be inserted only from head (singly linked list) or alike from both ends (doubly linked list) or even could be circular. This structure is efficient in insertion or removing from ends, but slow in traversing it's content. 
 
-**Tree** is non-linear data-structure, like linked lists it consists of nodes, but node can have links to multiple other nodes. Every tree must have a root that is a top-most node in the tree, and also it has no parents :(. Example of a tree is DOM in HTML.
+**Tree** is non-linear data-structure, like linked lists it consists of nodes, but node can have links to multiple other nodes. Every tree must have a root that is a top-most node in the tree, and also it has no parents :(. Examples of a tree is a DOM in HTML and file system.
 
 Practical task on python - [stack/linked list app + API](task-data-structure/README.md)
+
+## 10 -- File System
+
+### Unix File System
+
+Unix file system is a tree-like structure that contains directories, which in the turn contain files. A top-most directory is called "root". Also there are different types of files, some of them used to represent devices, some for processes or commands interconnection and basic files with data, text or programs.
+
+### File Permission / Access Modes
+
+File permission helps to increase control on file access. Basic permissions are: read, write, execute. These three rights can be set for three types of users: owner, group, others
+
+To change permissions **chmod** command is used. Example of using: 'chmod 361 somefile.txt'. If we represent 361 in binary form we will get: 011 110 001 that interpreters as -wx rw- --x, write and execute permission for owner, read and write permission for member of a group  that a file belongs to and execute permission for others.  
