@@ -577,9 +577,9 @@ After completing this course I can definitely say that I will not remember all o
 
 **Tree** is non-linear data-structure, like linked lists it consists of nodes, but node can have links to multiple other nodes. Every tree must have a root that is a top-most node in the tree, and also it has no parents :(. Examples of a tree is a DOM in HTML and file system.
 
-Practical task on python - [stack/linked list app + API](task-data-structure/README.md)
+Practical task on python - [stack/linked list app + API](task-data-structure/)
 
-## 10 -- File System
+## 10 - File System
 
 ### Unix File System
 
@@ -587,6 +587,6 @@ Unix file system is a tree-like structure that contains directories, which in th
 
 ### File Permission / Access Modes
 
-File permission helps to increase control on file access. Basic permissions are: read, write, execute. These three rights can be set for three types of users: owner, group, others
+File permission helps to increase control on file access. Basic permissions are: read, write, execute. These three rights can be set for three types of users: owner, group, others.
 
-To change permissions **chmod** command is used. Example of using: 'chmod 361 somefile.txt'. If we represent 361 in binary form we will get: 011 110 001 that interpreters as -wx rw- --x, write and execute permission for owner, read and write permission for member of a group  that a file belongs to and execute permission for others.  
+To change permissions **chmod** command is used. Example of using: `chmod 361 somefile.txt`. If we represent 361 in binary form we will get: `011 110 001` that interpreters as `-wx rw- --x`, write and execute permission for owner, read and write permission for member of a group  that a file belongs to and execute permission for others.  
