@@ -593,4 +593,10 @@ To change permissions **chmod** command is used. Example of using: `chmod 361 so
 
 **Working With Files in Python** article explains how to work with files in python programs, instruments similar to shell utilities can be found in libraries like os, pathlib, shutil.
 
-Practical part - [secret.txt](file_system/secret.txt), [file system task](file_system/file_system_task.py)
+Practical part - [secret.txt](file_system/secret.txt), [file system task](file_system/file_system_task.py).
+
+## 11 - Python Runtime and Ecosystem
+
+### GIL
+
+As I understood, GIL is a headache for python developers. It is a simple solution for a complex problem but has a tradeoff in multi-core performance, actually absence of it, because of GIL programs can only run in one thread at a time.
