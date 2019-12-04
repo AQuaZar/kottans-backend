@@ -590,3 +590,7 @@ Unix file system is a tree-like structure that contains directories, which in th
 File permission helps to increase control on file access. Basic permissions are: read, write, execute. These three rights can be set for three types of users: owner, group, others.
 
 To change permissions **chmod** command is used. Example of using: `chmod 361 somefile.txt`. If we represent 361 in binary form we will get: `011 110 001` that interpreters as `-wx rw- --x`, write and execute permission for owner, read and write permission for member of a group  that a file belongs to and execute permission for others.  
+
+**Working With Files in Python** article explains how to work with files in python programs, instruments similar to shell utilities can be found in libraries like os, pathlib, shutil.
+
+Practical part - [secret.txt](file_system/secret.txt), [file system task](file_system/file_system_task.py)
