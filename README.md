@@ -8,7 +8,6 @@ Git is a powerful tool of every developer, it makes life easier and saves time. 
 
 Course on Udacity had a great educational impact on me, a big pros that it showed different real situations and how they are handled with Git. Were studied main concepts like commits, staging area, remote repository, branches and GitHub collaboration principles. Important idea of committing is to understand not only how make a commit but why and how often.
 
-*Copied from frontend course*
 
 ![Screenshot of performed tasks](task-git-intro/Udacity_Git_Screen.png)
 
@@ -50,7 +49,6 @@ What was learned new:
 * Was introduced upstream, that helps us keep up to date our forked repository with original one;
 * And at the end was reviewed powerful git rebase, that provides us ability to change past commits, for example rename, squash, delete them and lot more.   
 
-*Copied from frontend course*
 
 ![Screenshot of performed tasks](task-git-collaboration/Version_Control_Complete.png)
 
@@ -599,4 +597,8 @@ Practical part - [secret.txt](file_system/secret.txt), [file system task](file_s
 
 ### GIL
 
-As I understood, GIL is a headache for python developers. It is a simple solution for a complex problem but has a tradeoff in multi-core performance, actually absence of it, because of GIL programs can only run in one thread at a time.
+As I understood, GIL is a headache for python developers. It is a simple solution for a complex problem but has a tradeoff in multi-core performance, because of GIL, only one thread can be executed at a time.
+
+### Async IO
+
+Asyncio gives us some sort of concurrency, moreover it is not dealing with GIL, all is legit - one process, one thread, what's the trick? The main 'ho ho' of the asyncio is to use downtime of one task and let other task run in the meantime, usually it is useful in the I/O tasks. 
