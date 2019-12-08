@@ -601,4 +601,10 @@ As I understood, GIL is a headache for python developers. It is a simple solutio
 
 ### Async IO
 
-Asyncio gives us some sort of concurrency, moreover it is not dealing with GIL, all is legit - one process, one thread, what's the trick? The main 'ho ho' of the asyncio is to use downtime of one task and let other task run in the meantime, usually it is useful in the I/O tasks. 
+Asyncio gives us some sort of concurrency, moreover it is not dealing with GIL, all is legit - one process, one thread, what's the trick? The main 'ho ho' of the asyncio is to use downtime of one task and let other task run in the meantime, usually it is useful in the I/O tasks. So what is happening is just switching between tasks back and forth and as result we have pretty sweet time bonus.
+
+## 12 - Relational Databases Basics
+
+DBMS gives possibility to store, manipulate and manage data. It provides data storage in organized manner, security and integrity of data and interaction with user queries. RDBMS is more extended version of DBMS, where data is presented as tables that are directly or indirectly related, and it has concept of keys. 
+
+Primary key is used to uniquely identify something in a table.  
