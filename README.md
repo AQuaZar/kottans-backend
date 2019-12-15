@@ -636,3 +636,9 @@ Asyncio gives us some sort of concurrency, moreover it is not dealing with GIL, 
 DBMS gives possibility to store, manipulate and manage data. It provides data storage in organized manner, security and integrity of data and interaction with user queries. RDBMS is more extended version of DBMS, where data is presented as tables that are directly or indirectly related, and it has concept of keys. 
 
 Primary key is used to uniquely identify something in a table.  
+
+To interact with data in a database we can use SQL that is Structured Query Language. Throughout the Udacity course, I used such query statements as:
+
+* select - this query is used to select data from database, in result the table is returned, there are variety of ways to specify data exactly that we need, also we can count, sort, find min and max from resulting table even faster than programming languages will do.
+
+* insert - very simple query that inputs data to database, we need specify values to insert and column destination.
