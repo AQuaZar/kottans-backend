@@ -642,3 +642,12 @@ To interact with data in a database we can use SQL that is Structured Query Lang
 * select - this query is used to select data from database, in result the table is returned, there are variety of ways to specify data exactly that we need, also we can count, sort, find min and max from resulting table even faster than programming languages will do.
 
 * insert - very simple query that inputs data to database, we need specify values to insert and column destination.
+
+* delete - used to delete records from table, also can be specified by which criteria it should be deleted. 
+
+Normalized forms:
+
+1. Amount of columns are have to be the same for all rows.
+2. All non-key fields are have to be facts about the keys (and about subset of a key).
+3. Non-key field cannot be fact about another non-key field.
+4. Row cannot have two independent multi-valued facts about entity without relations with each other.
