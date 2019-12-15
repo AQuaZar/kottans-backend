@@ -8,8 +8,12 @@ Git is a powerful tool of every developer, it makes life easier and saves time. 
 
 Course on Udacity had a great educational impact on me, a big pros that it showed different real situations and how they are handled with Git. Were studied main concepts like commits, staging area, remote repository, branches and GitHub collaboration principles. Important idea of committing is to understand not only how make a commit but why and how often.
 
+<details>
+  <summary>Udacity course complete</summary>                       
 
 ![Screenshot of performed tasks](task-git-intro/Udacity_Git_Screen.png)
+
+</details>
 
 ---
 
@@ -31,8 +35,13 @@ The Linux Survival tutorial introduced me a several new commands like:
 
 An article on [Linux Command](http://linuxcommand.org) provided a couple useful features like Brace Expansion, Command Substitution and now I comprehend the power of `chmod 777` 😄
 
+<details>
+  <summary>CLI course and Linux Survival complete</summary>                       
+
 ![Screenshot of performed tasks](task-unix-shell/CLI_Complete.png)
 ![Screenshot of performed tasks](task-unix-shell/Linux_Survival_Complete.png)
+
+</details>
 
 ---
 
@@ -49,10 +58,14 @@ What was learned new:
 * Was introduced upstream, that helps us keep up to date our forked repository with original one;
 * And at the end was reviewed powerful git rebase, that provides us ability to change past commits, for example rename, squash, delete them and lot more.   
 
+<details>
+  <summary>Git collaboration course complete</summary>                       
 
 ![Screenshot of performed tasks](task-git-collaboration/Version_Control_Complete.png)
 
 ![Screenshot of performed tasks](task-git-collaboration/Git_Collaboration_Complete.png)
+
+</details>
 
 ---
 
@@ -314,7 +327,12 @@ NAT is another example of middlebox devices, they act as a bridge between outsid
 
 Practical task on python - [port-sniffer](task-networks/sniffer.py)
 
+<details>
+  <summary>Udacity networking course complete</summary>                       
+
 ![Screenshot of performed tasks](task-networks/udacity-networking-complete.png)
+
+</details>
 
 ---
 
@@ -494,7 +512,8 @@ Enter host password for user 'AQuaZar':
 ]
 </details>
 
-### Q&A:
+<details>
+  <summary>Q&A</summary>                       
 
 1. Name at least three possible negative consequences of not using https.
 
@@ -529,6 +548,8 @@ First party encrypts message with own private key and sends to another, since ac
   * Body: info about pet, doctor and appointment date and time
   * Server response: 200 OK
 
+</details>
+
 ---
 
 ## 8 - Patterns
@@ -561,7 +582,14 @@ The point of the first 14 lessons is more about how to represent, express and de
 
 After completing this course I can definitely say that I will not remember all of the material covered, but as was mentioned in this course that its hard to implement patterns and software architecture principles by theoretical learning, is more about using your own experience. So this course gave me awareness about patterns and aspects of system design but my practical path is yet to come.
 
+<details>
+  <summary>Software architecture course complete</summary>                       
+
 ![Screenshot of performed tasks](task-patterns/soft-arch-completed.png)
+
+</details>
+
+---
 
 ## 9 - Data Structures
 
