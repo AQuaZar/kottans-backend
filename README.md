@@ -648,6 +648,6 @@ To interact with data in a database we can use SQL that is Structured Query Lang
 Normalized forms:
 
 1. Amount of columns are have to be the same for all rows.
-2. All non-key fields are have to be facts about the keys (and about subset of a key).
+2. All non-key fields are have to be facts about the keys (and not about subset of a key).
 3. Non-key field cannot be fact about another non-key field.
 4. Row cannot have two independent multi-valued facts about entity without relations with each other.
