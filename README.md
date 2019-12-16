@@ -651,3 +651,5 @@ Normalized forms:
 2. All non-key fields are have to be facts about the keys (and not about subset of a key).
 3. Non-key field cannot be fact about another non-key field.
 4. Row cannot have two independent multi-valued facts about entity without relations with each other.
+
+Subqueries concept gives us ability to work with intermediate tables that are results of a query. It is useful if we want to process the result of a query.
