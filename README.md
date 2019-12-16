@@ -652,4 +652,11 @@ Normalized forms:
 3. Non-key field cannot be fact about another non-key field.
 4. Row cannot have two independent multi-valued facts about entity without relations with each other.
 
-Subqueries concept gives us ability to work with intermediate tables that are results of a query. It is useful if we want to process the result of a query.
+Subqueries concept gives us ability to work with intermediate tables that are results of a query. It is useful if we want to apply query statement to the result of an another query statement.
+
+<details>
+  <summary>Intro to Relational Databases course complete</summary>                       
+
+![Screenshot of completed course](task-databases/udacity-rdmbs-complete.png)
+
+</details>
