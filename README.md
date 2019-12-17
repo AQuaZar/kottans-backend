@@ -637,13 +637,17 @@ DBMS gives possibility to store, manipulate and manage data. It provides data st
 
 Primary key is used to uniquely identify something in a table.  
 
-To interact with data in a database we can use SQL that is Structured Query Language. Throughout the Udacity course, I used such query statements as:
+To interact with data in a database we can use SQL that is Structured Query Language. Throughout the course, I used such query statements as:
 
-* select - this query is used to select data from database, in result the table is returned, there are variety of ways to specify data exactly that we need, also we can count, sort, find min and max from resulting table even faster than programming languages will do.
+* SELECT - this query is used to select data from database, in result the table is returned, there are variety of ways to specify data exactly that we need, also we can count, sort, find min and max from resulting table even faster than programming languages will do;
 
-* insert - very simple query that inputs data to database, we need specify values to insert and column destination.
+* INSERT - very simple query that inputs data to database, we need specify values to insert and column destination;
 
-* delete - used to delete records from table, also can be specified by which criteria it should be deleted. 
+* UPDATE - this statement edit the row in the table;
+
+* DELETE - used to delete records from table, also can be specified by which criteria it should be deleted;
+* GROUP BY - a clause used with aggregate functions to combine data from one or more columns.
+* HAVING limit the results of a query based on an aggregate property.
 
 Normalized forms:
 
