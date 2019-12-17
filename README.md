@@ -635,7 +635,9 @@ Asyncio gives us some sort of concurrency, moreover it is not dealing with GIL, 
 
 DBMS gives possibility to store, manipulate and manage data. It provides data storage in organized manner, security and integrity of data and interaction with user queries. RDBMS is more extended version of DBMS, where data is presented as tables that are directly or indirectly related, and it has concept of keys. 
 
-Primary key is used to uniquely identify something in a table.  
+**Primary key** is used to uniquely identify record in a table.  
+
+**Foreign key** is a column that contains the primary key to another table.
 
 To interact with data in a database we can use SQL that is Structured Query Language. Throughout the course, I used such query statements as:
 
@@ -659,8 +661,8 @@ Normalized forms:
 Subqueries concept gives us ability to work with intermediate tables that are results of a query. It is useful if we want to apply query statement to the result of an another query statement.
 
 <details>
-  <summary>Intro to Relational Databases course complete</summary>                       
+  <summary>Intro to Relational Databases and Learn SQL courses complete</summary>                       
 
 ![Screenshot of completed course](task-databases/udacity-rdmbs-complete.png)
-
+![Screenshot of completed course](task-databases/codecademy-learn-sql.png)
 </details>
