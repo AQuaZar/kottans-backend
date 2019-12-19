@@ -663,8 +663,9 @@ Normalized forms:
 Subqueries concept gives us ability to work with intermediate tables that are results of a query. It is useful if we want to apply query statement to the result of an another query statement.
 
 <details>
-  <summary>Intro to Relational Databases and Learn SQL courses complete</summary>                       
+  <summary>Intro to Relational Databases, Learn SQL and Khanacademy courses complete</summary>                       
 
 ![Screenshot of completed course](task-databases/udacity-rdmbs-complete.png)
 ![Screenshot of completed course](task-databases/codecademy-learn-sql.png)
+![Screen](task-databases/1.png) | ![Screen](task-databases/2.png) | ![Screen](task-databases/3.png) | ![Screen](task-databases/3.png) 
 </details>
