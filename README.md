@@ -651,6 +651,8 @@ To interact with data in a database we can use SQL that is Structured Query Lang
 * GROUP BY - a clause used with aggregate functions to combine data from one or more columns.
 * HAVING limit the results of a query based on an aggregate property.
 
+To select data that is stored in two tables we use JOIN clause. There are several types of joins, the simplest one is a **cross-join**, where every row of first table is combined with other row of another table, the more useful one is **inner join** where only such rows are combined where specified column values are the same. Whereas inner join provides us data only if there are matching records in both table, using LEFT or RIGHT **outer join** we can still have records (from left or right table respectively) even if they don't have accordance in another table.
+
 Normalized forms:
 
 1. Amount of columns are have to be the same for all rows.
