@@ -9,7 +9,7 @@ Git is a powerful tool of every developer, it makes life easier and saves time. 
 Course on Udacity had a great educational impact on me, a big pros that it showed different real situations and how they are handled with Git. Were studied main concepts like commits, staging area, remote repository, branches and GitHub collaboration principles. Important idea of committing is to understand not only how make a commit but why and how often.
 
 <details>
-  <summary>Udacity course complete</summary>                       
+  <summary>📚 Udacity course complete 📚</summary>                       
 
 ![Screenshot of performed tasks](task-git-intro/Udacity_Git_Screen.png)
 
@@ -36,7 +36,7 @@ The Linux Survival tutorial introduced me a several new commands like:
 An article on [Linux Command](http://linuxcommand.org) provided a couple useful features like Brace Expansion, Command Substitution and now I comprehend the power of `chmod 777` 😄
 
 <details>
-  <summary>CLI course and Linux Survival complete</summary>                       
+  <summary>📚 CLI course and Linux Survival complete 📚</summary>                       
 
 ![Screenshot of performed tasks](task-unix-shell/CLI_Complete.png)
 ![Screenshot of performed tasks](task-unix-shell/Linux_Survival_Complete.png)
@@ -59,7 +59,7 @@ What was learned new:
 * And at the end was reviewed powerful git rebase, that provides us ability to change past commits, for example rename, squash, delete them and lot more.   
 
 <details>
-  <summary>Git collaboration course complete</summary>                       
+  <summary>📚 Git collaboration course complete 📚</summary>                       
 
 ![Screenshot of performed tasks](task-git-collaboration/Version_Control_Complete.png)
 
@@ -325,10 +325,10 @@ I find this familiar to the conversation of two people with walkie-talkie. They 
 Firewall is one of the **middlebox** devices that performs filtering function between client and server, it can also change traffic, e.g. replace content of a web-page in politic or social purposes.
 NAT is another example of middlebox devices, they act as a bridge between outside and inside network, several devices in local network can share the same "outside" address, usually our home routers perform both firewall and NAT functions.  
 
-Practical task on python - [port-sniffer](task-networks/sniffer.py)
+⌨️ Practical task on python - [port-sniffer](task-networks/sniffer.py) ⌨️
 
 <details>
-  <summary>Udacity networking course complete</summary>                       
+  <summary>📚 Udacity networking course complete 📚</summary>                       
 
 ![Screenshot of performed tasks](task-networks/udacity-networking-complete.png)
 
@@ -583,7 +583,7 @@ The point of the first 14 lessons is more about how to represent, express and de
 After completing this course I can definitely say that I will not remember all of the material covered, but as was mentioned in this course that its hard to implement patterns and software architecture principles by theoretical learning, is more about using your own experience. So this course gave me awareness about patterns and aspects of system design but my practical path is yet to come.
 
 <details>
-  <summary>Software architecture course complete</summary>                       
+  <summary>📚 Software architecture course complete 📚</summary>                       
 
 ![Screenshot of performed tasks](task-patterns/soft-arch-completed.png)
 
@@ -603,7 +603,7 @@ After completing this course I can definitely say that I will not remember all o
 
 **Tree** is non-linear data-structure, like linked lists it consists of nodes, but node can have links to multiple other nodes. Every tree must have a root that is a top-most node in the tree, and also it has no parents :(. Examples of a tree is a DOM in HTML and file system.
 
-Practical task on python - [stack/linked list app + API](task-data-structure/)
+⌨️ Practical task on python - [stack/linked list app + API](task-data-structure/) ⌨️
 
 ## 10 - File System
 
@@ -619,7 +619,7 @@ To change permissions **chmod** command is used. Example of using: `chmod 361 so
 
 **Working With Files in Python** article explains how to work with files in python programs, instruments similar to shell utilities can be found in libraries like os, pathlib, shutil.
 
-Practical part - [secret.txt](file_system/secret.txt), [file system task](file_system/file_system_task.py).
+⌨️ Practical part - [secret.txt](file_system/secret.txt), [file system task](file_system/file_system_task.py). ⌨️
 
 ## 11 - Python Runtime and Ecosystem
 
@@ -663,7 +663,7 @@ Normalized forms:
 Subqueries concept gives us ability to work with intermediate tables that are results of a query. It is useful if we want to apply query statement to the result of an another query statement.
 
 <details>
-  <summary>Intro to Relational Databases, Learn SQL and Khanacademy courses complete</summary>                       
+  <summary>📚 Intro to Relational Databases, Learn SQL and Khanacademy courses complete 📚 </summary>                       
 
 ![Screenshot of completed course](task-databases/udacity-rdmbs-complete.png)
 ![Screenshot of completed course](task-databases/codecademy-learn-sql.png)
